@@ -15,26 +15,28 @@ case 1:
 
 Console.WriteLine("Введите пятизначное число");
 string? A = Console.ReadLine();
-
-void CheckA(string A)
+if (A is not null)
 {
-    if(A[0]== A[4] && A[1] == A[3])
+    void CheckA(string A)
     {
+        if(A[0]== A[4] && A[1] == A[3])
+        {
         Console.WriteLine($"Число {A} является палиндромом");
-    }
-    else
-    {
+        }
+        else
+        {
         Console.WriteLine($"Число {A} не является палиндромом");
+        }
     }
-}
 
-if(A.Length == 5)
-{
-    CheckA(A);
-}
-else 
-{
-    Console.WriteLine("Число не пятизначно");
+    if(A.Length == 5)
+    {
+        CheckA(A);
+    }
+    else 
+    {
+        Console.WriteLine("Число не пятизначно");
+    }
 }
 break;
 
