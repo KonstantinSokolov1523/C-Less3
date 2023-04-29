@@ -28,7 +28,8 @@ if (A is not null)
         Console.WriteLine($"Число {A} не является палиндромом");
         }
     }
-
+if(Convert.ToInt32(A) > 9999)
+{
     if(A.Length == 5)
     {
         CheckA(A);
@@ -37,6 +38,7 @@ if (A is not null)
     {
         Console.WriteLine("Число не пятизначно");
     }
+}
 }
 break;
 
