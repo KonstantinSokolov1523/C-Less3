@@ -28,8 +28,9 @@ if (A is not null)
         Console.WriteLine($"Число {A} не является палиндромом");
         }
     }
-int C = Convert.ToInt32(A);
-if(C < 9999)
+try
+{
+long C = Convert.ToInt64(A);
 {
     if(A.Length == 5)
     {
@@ -40,7 +41,8 @@ if(C < 9999)
         Console.WriteLine("Число не пятизначно");
     }
 }
-else
+}
+catch
 {
 Console.WriteLine("Это не число");
 }
