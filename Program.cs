@@ -28,7 +28,8 @@ if (A is not null)
         Console.WriteLine($"Число {A} не является палиндромом");
         }
     }
-if(Convert.ToInt32(A) > 9999)
+int C = Convert.ToInt32(A);
+if(C < 9999)
 {
     if(A.Length == 5)
     {
