@@ -39,6 +39,10 @@ if(Convert.ToInt32(A) > 9999)
         Console.WriteLine("Число не пятизначно");
     }
 }
+else
+{
+Console.WriteLine("Это не число");
+}
 }
 break;
 
